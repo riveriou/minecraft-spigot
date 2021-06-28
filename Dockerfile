@@ -20,7 +20,7 @@ RUN apt-get -y install default-jdk git --no-install-recommends
 WORKDIR /data
 RUN cd /data
 RUN wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
-RUN java -jar ./BuildTools.jar --rev lateset
+RUN java -jar ./BuildTools.jar --rev latest
 RUN apt-get clean
 RUN echo "set pastetoggle=<F11> " >> ~/.vimrc
 
